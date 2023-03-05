@@ -83,3 +83,8 @@ function openModalWindow(URL) {
     window.removeEventListener("keydown", onEscKeyDown);
   }
 }
+
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('show.simplelightbox', function () {
+	// do something…
+});
